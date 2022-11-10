@@ -1,10 +1,18 @@
-﻿
-Console.WriteLine("......Tabuada do número.....:");
-int numero = Convert.ToInt32(Console.ReadLine());
+﻿    Console.Clear();
 
-int vezes = 0;
+    Console.ForegroundColor = ConsoleColor.Magenta;
 
-int resultado;
+
+    Console.Write("......Tabuada do número.....:");
+    int numero = Convert.ToInt32(Console.ReadLine());
+
+    int vezes = 0;
+
+    int resultado;
+    Console.ResetColor();
+
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+
 
 while ( vezes <= 10 )
 {
@@ -13,5 +21,10 @@ while ( vezes <= 10 )
     Console.Write($"{numero} X {vezes} = {resultado}\n");
     vezes += 1;
 };
+
+
+
+
+    Console.ResetColor();
 
 
